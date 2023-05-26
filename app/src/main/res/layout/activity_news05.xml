@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF8FF"
+    tools:context=".NewsActivities.News05">
+
+    <ImageView
+        android:id="@+id/imageTop"
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageLogo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/butZone"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:backgroundTint="@color/pink"
+            android:padding="0dp"
+            android:text="@string/fotozone"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/butStash"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/green"
+            android:padding="0dp"
+            android:text="@string/stash"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/butFace"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/brown"
+            android:padding="0dp"
+            android:text="@string/fotoface"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="112dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/butHome"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/home"
+            android:layout_marginTop="58dp"
+            android:layout_marginStart="37dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/butSearch"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/search"
+            android:layout_marginTop="58dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/butUser"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/user"
+            android:layout_marginTop="58dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/butLikes"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/likes"
+            android:layout_marginTop="58dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/butSettings"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/settings"
+            android:layout_marginTop="58dp"
+            android:layout_marginStart="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="270dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTop">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/newsl05" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gift" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Новинки\nпроката!"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gift" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_text"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Новинки проката.\n В прокате  обновился ассортимент, и теперь вы можете найти для себя что-то новое."
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="В разделе “Реквизит” вы можете ознакомиться как с новинкакми, так и с уже предложеным ассортиментом."
+                android:textColor="@color/greenDark" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Уточнить подробности можно по номеру: \n+7 924 *** ** 12"
+                android:textColor="@color/greenDark" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
